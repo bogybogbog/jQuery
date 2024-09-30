@@ -1,0 +1,15 @@
+.test{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /* margin: 20px; */
+    /* display: none; */
+}
+.container-fluid{
+    width: 15px;
+    height: 15px;
+    background-color: bisque;
+}
+p, h2, .col-md-4{
+    display: none;
+}
