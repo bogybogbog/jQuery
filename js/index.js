@@ -50,15 +50,44 @@
 
 // });
 
-$(window).on("load", function () {
-  $(".container-fluid").animate({ width: "100%" }, 1000);
-  $(".container-fluid").animate({ height: "100vh" }, 1000, function () {
-    $("h2").slideDown(1000, function () {
-      $("#demo").show(1000, function () {
-        $(".col-md-4").slideDown(1000, function () {
-          $(".col-md-4 p").slideDown(1000);
-        });
-      });
-    });
-  });
-});
+// $(window).on("load", function () {
+//   $(".container-fluid").animate({ width: "100%" }, 1000);
+//   $(".container-fluid").animate({ height: "100vh" }, 1000, function () {
+//     $("h2").slideDown(1000, function () {
+//       $("#demo").show(1000, function () {
+//         $(".col-md-4").slideDown(1000, function () {
+//           $(".col-md-4 p").slideDown(1000);
+//         });
+//       });
+//     });
+//   });
+// });
+
+/**
+ * ! DOM ====> setter | getter :
+ 
+ * ? html()  ==> innerHTML
+ * ? text()  ==> innerText
+ * ? css()   ==> .style ==> inline style, .css({cssText: `background-color:blue;....`}) or css({backgroundColor: blue,....})
+ * ? attr()  ==> it works as setAttribute() or getAttribute() ===> .attr("src", "....")
+ * ? val()   ==> __.value
+ 
+ * ? addClass()
+ * ? removeClass()
+ * ? toggleClass()
+ * ? hasClass()
+ 
+ * ? remove() ===> removes the whole element
+ * ? empty() 
+ 
+ * ? append("")  ===> add on the text at the end
+ * ? prepend("") ===> add on the text at the first
+ * ? after() ===> add after the element 
+ * ? before() ===> add b4 the element 
+ 
+ * ? width()            ===> width
+ * ? innerWidth()       ===> width + padding
+ * ? outerWidth()       ===> width + padding + botder
+ * ? outerWidth(true)   ===> width + padding + botder + margin
+
+ */
