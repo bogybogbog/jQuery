@@ -1,8 +1,11 @@
+///   <reference types="../@types/jquery" />;
+
 // ! JQuery =====> effects, DOM, Travirsing
 /**
  * $  ====> jquery
  * () ====> any css selector
- * ? effects:
+ 
+ * ! effects :
  
  * hide()
  * show()  // d-none
@@ -78,7 +81,7 @@
  * ? hasClass()
  
  * ? remove() ===> removes the whole element
- * ? empty() 
+ * ? empty()  ===> empty innerHTML
  
  * ? append("")  ===> add on the text at the end
  * ? prepend("") ===> add on the text at the first
@@ -91,3 +94,42 @@
  * ? outerWidth(true)   ===> width + padding + botder + margin
 
  */
+
+/**
+ * ! Travirsing
+
+ * ? next()          
+ * ? nextAll()       it can take a prameter "span" that meant it will be nextall span only
+ * ? prev()
+ * ? prevAll()       it can take a prameter "span" that meant it will be nextall span only
+ * ? nextUntil("")   "till what element u want"   
+ * ? prevUntil("")   "till what element u want"   
+ * ? siblings()       all mt siblings  
+ 
+ * ? parent()
+ * ? parents()
+ * ? parentsUntil("")
+ 
+ * ? children() ===> direct childs
+ * ? children("div") ===> direct childs (div)
+ 
+ * ? find("")
+ * ? not("#demo")
+ * ? eq(the index)  ===> 0, 1, 2, 3, ...
+ * ? 
+ */
+
+// $("#demo").siblings ().css({borderColor: "red"});
+// $("span").on("click", function(e){
+//     $(e.target).css({borderColor: "red"})
+//     $(e.target).siblings().css({borderColor: "#09c"})
+// })
+
+// $("span").on("click", function(e){
+//     $(e.target).addClass("active")
+//     $(e.target).siblings().removeClass("active")
+// })
+// $("#demo").parentsUntil("section").css({ borderColor: "black" });
+$("span").eq(4).css({ borderColor: "black" });
+
+$("span");
